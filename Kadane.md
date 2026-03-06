@@ -1,6 +1,7 @@
 #### PATTERN NAME: Kadane Pattern (Maximum Subarray / Best Subarray Ending Here)
 
 1) WHEN TO THINK OF THIS (Fast Pattern Recognition)
+- Question is of Array, asked for min/max of sum/product/frequncy with some condition in subarray
 - If the problem mentions / implies maximum sum of a contiguous subarray
 - If asked for best subarray ending at index i or local vs global optimum
 - If brute force considers all subarrays and their sums
@@ -55,6 +56,8 @@ return global_best
 > 7) COMMON VARIATIONS & WHAT CHANGES
 - Return subarray indices → track start/reset positions
 - Minimum subarray sum → invert comparison (min instead of max)
+- Max sum subarray with one deletion → identify `best_no_delete` and `best_one_delete`
+- Max absolute sum → 
 - Circular array max sum → Kadane + total sum − min subarray
 - Max product subarray → track max and min states
 - 2D max submatrix → compress rows + apply Kadane per column span
